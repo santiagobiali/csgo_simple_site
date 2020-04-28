@@ -1,0 +1,82 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+header{
+    background-image: url("../Imagens/img_30033_foto_1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;  
+    background-color: #262e6f;
+}
+
+section{
+    display: -webkit-flex; /*configurar para diferentes navegadores*/
+    display: flex;
+}
+
+#navDust2{
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: white;
+    padding: 20px;
+}
+
+#navDust2 ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+article{
+    -webkit-flex:3;
+    -ms-flex:3;
+    flex:3;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: justify;
+}
+
+footer{
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Media Queries - serve para aplicar estilos especificos 
+em determinadas configurações de usuários*/
+@media(max-width:600px){
+    section{
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+#maps_pool, #videos, #br_teams {
+    text-align: center;   
+}
+
+#maps_pool img {
+    width: 300px;
+    margin-bottom: 5px;
+}
+
+#br_teams img {
+    width: 500px;
+    margin-bottom: 5px;
+}
+
+#floating {
+    width: 150px;
+    height: 150px;
+    position: fixed;
+    bottom: 25px;
+    left: 5px;
+}
